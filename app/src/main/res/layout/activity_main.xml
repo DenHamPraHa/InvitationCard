@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.denhampraha.invitationcard.MainActivity"
+    android:background="@drawable/sky">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:background="#FFFFFF"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="30dp">
+
+        <TextView
+            android:id="@+id/dinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+           android:fontFamily="cursive"
+            android:text="Dinner with Friends "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:typeface="monospace" />
+
+
+        <ImageView
+            android:id="@+id/plate"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/dinner"
+            android:layout_centerInParent="true"
+            android:src="@drawable/dinner" />
+
+        <ImageView
+            android:id="@+id/clock"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/plate"
+            android:layout_marginLeft="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/clock" />
+
+        <ImageView
+            android:id="@+id/place"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_alignEnd="@+id/clock"
+            android:layout_alignRight="@+id/clock"
+            android:layout_below="@+id/clock"
+            android:src="@drawable/place" />
+
+        <ImageView
+            android:id="@+id/money"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@+id/place"
+            android:layout_alignLeft="@+id/place"
+            android:layout_alignRight="@+id/place"
+            android:layout_alignStart="@+id/place"
+            android:layout_below="@id/place"
+            android:src="@drawable/money" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/clock"
+            android:layout_toRightOf="@+id/clock"
+            android:fontFamily="cursive"
+            android:text="7 PM - 10 PM"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/ppbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/money"
+            android:layout_alignLeft="@id/time"
+            android:layout_alignStart="@id/time"
+            android:layout_toRightOf="@id/place"
+            android:fontFamily="cursive"
+            android:text="PPBS D, Kampus Jatinangor"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/money"
+            android:layout_alignLeft="@+id/ppbs"
+            android:layout_alignStart="@+id/ppbs"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="cursive"
+            android:text="Free"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/plate"
+            android:layout_alignStart="@+id/plate"
+            android:layout_below="@+id/money"
+            android:layout_marginTop="21dp"
+            android:fontFamily="cursive"
+            android:text="Come Join Us !!"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:fontFamily="cursive"
+            android:text="For More Information Line : @Crenz"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginRight="3dp"/>
+
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
